@@ -1,0 +1,10 @@
+nota = []
+soma=0
+media=0
+for i in range(0,10):
+    nt=float(input("Informe a nota do aluno: "))
+    nota.append(nt)
+for i in range(0,10):
+    soma+=nota[i]
+media=soma/10
+print(media)
