@@ -1,0 +1,10 @@
+i=0
+lista = []
+while True:
+    nome=input("Informe o nome: ")
+    lista.append(nome)
+    i+=1
+    if(i==5):
+        break
+for i in lista:
+    print(i)
