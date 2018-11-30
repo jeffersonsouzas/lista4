@@ -1,0 +1,6 @@
+lista = []
+for i in range(0,10):
+    num=float(input("Informe o numero: "))
+    lista.append(num)
+lista.reverse()
+print(lista)
