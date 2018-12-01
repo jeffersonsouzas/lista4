@@ -1,0 +1,28 @@
+numeros = [0, 1, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10, 10, 10, 11, 11, 12, 13]
+lst1=[]
+lst2=[]
+lst3=[]
+lst4=[]
+lst5=[]
+lst6=[]
+for i in numeros:
+    if(i>=1 and i<=5):
+        lst1.append(i)
+    elif(i>=8 and i<=12):
+        lst2.append(i)
+for i in numeros:
+    if(i%2==0):
+        lst3.append(i)
+    else:
+        lst4.append(i)
+for i in numeros:
+    if(i%3==0 and i%5==0):
+        lst5.append(i)
+lst6 = numeros
+lst6.reverse()
+print(lst1)
+print(lst2)
+print(lst3)
+print(lst4)
+print(lst5)
+print(lst6)
