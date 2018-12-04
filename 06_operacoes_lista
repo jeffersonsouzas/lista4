@@ -1,0 +1,26 @@
+lista = []
+maior=-999999999
+soma=0
+media=0
+ngt=0
+i=0
+cont=int(input("Informe a quantidade de itens: "))
+while True:
+    num=int(input("Informe o numero: "))
+    lista.append(num)
+    i+=1
+    if(i==cont):
+        break
+for c in lista:
+    soma+=c
+    if(c>maior):
+        maior=c
+media=soma/cont
+for v in lista:
+    if(v<0):
+        ngt+=v
+print("\nO maior valor é: "+str(maior)+".\n")
+print("A soma dos elementos é: "+str(soma)+".\n")
+print("O número de ocorrências do primeiro elemento da lista é: "+str(len(lista))+".\n")
+print("A media dos elementos é: "+ str(media)+".\n")
+print("A soma dos elementos negativos é; "+str(ngt)+".\n")
