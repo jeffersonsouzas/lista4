@@ -1,0 +1,9 @@
+valores=[]
+cont=0
+while True:
+    nota=float(input("Informe a nota"))
+    if(nota==-1):
+        break
+    else:
+         cont+=1
+         valores.append(nota)
