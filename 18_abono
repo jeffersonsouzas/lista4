@@ -1,0 +1,36 @@
+lstsal=[]
+total=0
+reaj=0
+abono=0
+cont=0
+mais100=0
+maior=0
+if(reaj<100.00):
+    reaj=100.00
+while True:
+    salario=float(input("Informe o valor do salario: "))
+    cont+=1
+    if(salario==0):
+        break
+    else:
+        reaj=salario*0.20
+        if(reaj<100):
+            reaj=100
+            mais100+=1
+            abono=salario+reaj
+            lstsal.append(abono)
+            if(abono>maior):
+                maior=abono
+        else:
+            abono=salario+reaj
+            lstsal.append(abono)
+            if(abono>maior):
+                maior=abono
+for i in lstsal:
+    print("O salario do funcionário é: ", i)
+    total+=i
+cont-=1
+print("O valor total a ser gasto com o pagamento do abono é: ",total)
+print("O total de funcionários processados é: ",cont)
+print("Funcionários que receberam o piso: ",mais100)
+print("O maior valor pago foi: ",maior)
